@@ -6,24 +6,13 @@ class Busca
   end
 
   def self.criar_criterio(parametros)
-    criterio = CriterioDeBusca.new
-    criterio.por_pagina = parametros[:resultados_por_pagina] || 15
-    criterio.categoria = parametros[:categoria] || :tudo
-
     if parametros[:tipo_de_busca] == :promocional
-      criterio.categoria = :em_promocao
-      criterio.ordenar_por = :mais_recente
+      FabricaDeCriterio.criar_promocional(parametros)
     elsif parametros[:tipo_de_busca] == :por_categoria
-      if parametros[:categoria]
-        criterio.ordenar_por = parametros[:ordenar_por] || :mais_recente
-      else # volta para busca normal
-        criterio.ordenar_por = parametros[:ordenar_por] || :relevancia
-      end
-    else # busca normal
-      criterio.ordenar_por = parametros[:ordenar_por] || :relevancia
+      FabricaDeCriterio.criar_por_categoria(parametros)
+    else
+      FabricaDeCriterio.criar_por_categoria(parametros)
     end
-
-    criterio
   end
 
   def self.encontrar_produtos_por_ids(ids)
