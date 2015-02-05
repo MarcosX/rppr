@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
-gem 'rspec'
-gem 'pry'
+gem 'rspec', '3.1'
+gem 'pry', '0.10'
