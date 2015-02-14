@@ -1,8 +1,8 @@
 describe Carro do
   context 'validações' do
     it 'nao pode ter ano de modelo menor que ano de fabricacao' do
-      ano_fabricacao = Time.new('2000', '1', '1')
-      ano_modelo = Time.new('1999', '1', '1')
+      ano_fabricacao = 2000
+      ano_modelo = 1999
       carro_invalido = Carro.new('modelo A', 'fabricante A', ano_fabricacao,
                                  'ABC1234', nil, nil, ano_modelo, nil, nil)
       mensagem_de_erro = 'ano do modelo nao pode ser anterior ao ano de fabricacao'
