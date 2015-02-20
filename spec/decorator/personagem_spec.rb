@@ -19,7 +19,7 @@ describe Personagem do
     context 'com encatamento magico' do
       it 'tem +15 de forca de ataque' do
         personagem = Personagem.new(dano_base: 5)
-        adaga_magica = AdagaMagica.new
+        adaga_magica = ArmaMagica.new(Adaga.new)
         personagem.equipar_arma(adaga_magica)
         forca_de_ataque = personagem.forca_de_ataque
         expect(forca_de_ataque).to eq(20)
@@ -27,7 +27,7 @@ describe Personagem do
 
       it 'ganha +7 na velocidade de ataque' do
         personagem = Personagem.new(dano_base: 5, velocidade: 7)
-        adaga_magica = AdagaMagica.new
+        adaga_magica = ArmaMagica.new(Adaga.new)
         personagem.equipar_arma(adaga_magica)
         velocidade_de_ataque = personagem.velocidade_de_ataque
         expect(velocidade_de_ataque).to eq(14)
@@ -55,7 +55,7 @@ describe Personagem do
     context 'com encatamento magico' do
       it 'tem +25 de forca de ataque' do
         personagem = Personagem.new(dano_base: 5)
-        espada_magica = EspadaLongaMagica.new
+        espada_magica = ArmaMagica.new(EspadaLonga.new)
         personagem.equipar_arma(espada_magica)
         forca_de_ataque = personagem.forca_de_ataque
         expect(forca_de_ataque).to eq(30)
@@ -63,7 +63,7 @@ describe Personagem do
 
       it 'recebe +2 de bonus na velocidade de ataque' do
         personagem = Personagem.new(dano_base: 5, velocidade: 7)
-        espada_magica = EspadaLongaMagica.new
+        espada_magica = ArmaMagica.new(EspadaLonga.new)
         personagem.equipar_arma(espada_magica)
         velocidade_de_ataque = personagem.velocidade_de_ataque
         expect(velocidade_de_ataque).to eq(9)
