@@ -6,6 +6,6 @@ class EspadaLongaMagica
   end
 
   def bonus_velocidade
-    0
+    2
   end
 end
