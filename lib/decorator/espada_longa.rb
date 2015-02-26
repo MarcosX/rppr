@@ -1,6 +1,4 @@
 class EspadaLonga
-  attr_reader :dano
-
   def dano
     20
   end
