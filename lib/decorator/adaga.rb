@@ -1,6 +1,4 @@
 class Adaga
-  attr_reader :dano
-
   def dano
     10
   end
