@@ -5,6 +5,7 @@ require_relative 'template_worker'
 class EmailWorker < TemplateWorker
   attr_reader :limite_timeout, :limite_tentativas, :contador_tentativas
 
+  protected
   def trabalhar(parametros)
     usuario = buscar_usuario(parametros[:usuario])
     corpo = gerar_mensagem(parametros[:mensagem],
@@ -31,6 +32,7 @@ class EmailWorker < TemplateWorker
     @contador_tentativas += 1
   end
 
+  private
   def gerar_mensagem(tipo_de_mensagem, usuario)
     "corpo do email de #{tipo_de_mensagem} enviado por #{usuario}"
   end
