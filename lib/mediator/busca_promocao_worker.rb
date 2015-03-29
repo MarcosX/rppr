@@ -2,8 +2,7 @@ class BuscaPromocaoWorker
   def executar(usuario)
     produtos_de_interesse =
       produtos_promocionais & usuario.produtos_de_interesse
-    NotificadorCliente.produtos_em_promocao(produtos_de_interesse)
-    NotificadorFornecedor.produtos_em_promocao(produtos_de_interesse)
+    NotificadorMediator.produtos_em_promocao(produtos_de_interesse)
     atualizar_notificao_do_usuario
   end
 

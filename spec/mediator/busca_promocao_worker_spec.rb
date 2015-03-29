@@ -7,8 +7,7 @@ describe BuscaPromocaoWorker do
     worker = BuscaPromocaoWorker.new
     allow(worker).to receive(:produtos_promocionais).and_return(produtos)
 
-    expect(NotificadorCliente).to receive(:produtos_em_promocao).with(produtos)
-    expect(NotificadorFornecedor).to receive(:produtos_em_promocao).with(produtos)
+    expect(NotificadorMediator).to receive(:produtos_em_promocao).with(produtos)
 
     worker.executar(usuario)
   end
@@ -22,8 +21,8 @@ describe BuscaPromocaoWorker do
     produtos_promocionais = ['Super Maria Brothers', 'USB Controller']
     allow(worker).to receive(:produtos_promocionais).and_return(produtos_promocionais)
 
-    expect(NotificadorCliente).to receive(:produtos_em_promocao).with(['Super Maria Brothers'])
-    expect(NotificadorFornecedor).to receive(:produtos_em_promocao).with(['Super Maria Brothers'])
+    expect(NotificadorMediator).to receive(:produtos_em_promocao).with(['Super Maria Brothers'])
+
     worker.executar(usuario)
   end
 end
