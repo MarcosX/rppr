@@ -30,6 +30,7 @@ class EmailWorker < TemplateWorker
 
   def deve_tentar_novamente(e, parametros)
     @contador_tentativas += 1
+    @contador_tentativas < @limite_tentativas
   end
 
   private

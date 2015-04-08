@@ -16,8 +16,9 @@ describe EmailWorker do
 
   it 'deve gerenciar erros de timeout' do
     worker = EmailWorker.new
-    allow(worker).to receive(:enviar_email).and_raise(Timeout::Error)
-    allow(worker).to receive(:deve_tentar_novamente).and_return(false)
+    allow(worker).to receive(:enviar_email)
+                      .exactly(5).times
+                      .and_raise(Timeout::Error)
     id_usuario = 1
     lista_de_destinatarios = ['email@email.com']
     expect {
