@@ -23,4 +23,14 @@ class FabricaDeCriterio
     criterio.ordenar_por = parametros[:ordenar_por] || :relevancia
     criterio
   end
+
+  def self.criar_criterio(parametros)
+    if parametros[:tipo_de_busca] == :promocional
+      criar_promocional(parametros)
+    elsif parametros[:tipo_de_busca] == :por_categoria
+      criar_por_categoria(parametros)
+    else
+      criar_por_categoria(parametros)
+    end
+  end
 end
