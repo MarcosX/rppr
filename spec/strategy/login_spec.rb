@@ -1,6 +1,3 @@
-require_relative './servico_facenote_login_fake.rb'
-require_relative './servico_zuiter_login_fake.rb'
-
 describe Login do
   context 'fazendo login via FaceNote' do
     it 'utiliza LoginViaFaceNote para autenticar' do
