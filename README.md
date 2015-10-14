@@ -21,5 +21,6 @@ Se tiver alguma dúvida ou quiser olhar a implementação final, basta trocar o 
 
 Se você encontrar algum erro ou achar alguma maneira de deixar o código mais expressivo, basta criar um pull request com suas mudanças!
 
-Todo o trabalho está 
+Todo o trabalho está disponível com licensa Creative Commons (para mais informações veja o arquivo LICENSE)
+
 ![Licanesa Crative Commons (BY/SA)](https://licensebuttons.net/l/by-sa/3.0/88x31.png "Creative Commons")
