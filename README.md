@@ -1,7 +1,10 @@
 # Refatorando com Padrões de Projeto
 _Um guia em Ruby_
 
-[![Build Status](https://snap-ci.com/MarcosX/rppr/branch/master/build_image)](https://snap-ci.com/MarcosX/rppr/branch/master)
+[![Página do livo no site oficial da Casa do Código](http://cdn.shopify.com/s/files/1/0155/7645/products/Amazon-Refatoracao-Ruby_large.jpg?v=1445627898)](http://www.casadocodigo.com.br/products/livro-refatoracao-ruby)
+
+Acesse a página oficial da Casa do Código para adquirir sua cópia do livro!
+http://www.casadocodigo.com.br/products/livro-refatoracao-ruby
 
 ## Como o repositório está organizado
 
@@ -24,3 +27,7 @@ Se você encontrar algum erro ou achar alguma maneira de deixar o código mais e
 Todo o trabalho está disponível com licensa Creative Commons (para mais informações veja o arquivo LICENSE)
 
 ![Licanesa Crative Commons (BY/SA)](https://licensebuttons.net/l/by-sa/3.0/88x31.png "Creative Commons")
+
+## Build Status
+
+[![Build Status](https://snap-ci.com/MarcosX/rppr/branch/master/build_image)](https://snap-ci.com/MarcosX/rppr/branch/master)
