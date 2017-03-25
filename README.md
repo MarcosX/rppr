@@ -1,5 +1,3 @@
-[![CircleCI](https://circleci.com/gh/MarcosX/rppr/tree/master.svg?style=svg)](https://circleci.com/gh/MarcosX/rppr/tree/master)
-
 # Refatorando com Padrões de Projeto
 _Um guia em Ruby_
 
@@ -32,4 +30,4 @@ Todo o trabalho está disponível com licensa Creative Commons (para mais inform
 
 ## Build Status
 
-[![Build Status](https://snap-ci.com/MarcosX/rppr/branch/master/build_image)](https://snap-ci.com/MarcosX/rppr/branch/master)
+[![CircleCI](https://circleci.com/gh/MarcosX/rppr/tree/master.svg?style=svg)](https://circleci.com/gh/MarcosX/rppr/tree/master)
