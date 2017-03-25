@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/MarcosX/rppr/tree/master.svg?style=svg)](https://circleci.com/gh/MarcosX/rppr/tree/master)
+
 # Refatorando com Padrões de Projeto
 _Um guia em Ruby_
 
